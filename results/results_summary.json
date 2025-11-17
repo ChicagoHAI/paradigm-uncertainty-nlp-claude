@@ -1,0 +1,200 @@
+{
+  "experiment_info": {
+    "model": "gpt2",
+    "num_questions": 30,
+    "conditions": [
+      "control",
+      "path",
+      "paradigm"
+    ],
+    "questions_per_condition": 10,
+    "num_runs": 3,
+    "layers_analyzed": [
+      2,
+      6,
+      11
+    ],
+    "random_seed": 42
+  },
+  "metrics": {
+    "control": {
+      "layer_variance": {
+        "mean": 0.051493704319000244,
+        "std": 0.034528959542512894,
+        "min": 0.0027978457510471344,
+        "max": 0.09906475991010666,
+        "n": 30
+      },
+      "activation_entropy": {
+        "mean": 4.1396989822387695,
+        "std": 0.435763955116272,
+        "min": 3.485745906829834,
+        "max": 5.011914253234863,
+        "n": 90
+      },
+      "cross_run_similarity": {
+        "mean": 1.0,
+        "std": 3.3079234640354116e-07,
+        "min": 0.9999995827674866,
+        "max": 1.0000005960464478,
+        "n": 30
+      },
+      "token_variance": {
+        "mean": 889.7296142578125,
+        "std": 688.919921875,
+        "min": 3.438098907470703,
+        "max": 1881.05615234375,
+        "n": 90
+      },
+      "activation_magnitude": {
+        "mean": 378.8104553222656,
+        "std": 169.6031036376953,
+        "min": 167.77059936523438,
+        "max": 648.5906982421875,
+        "n": 90
+      }
+    },
+    "path": {
+      "layer_variance": {
+        "mean": 0.003693346632644534,
+        "std": 0.0023023763205856085,
+        "min": 0.0010209184838458896,
+        "max": 0.008626701310276985,
+        "n": 30
+      },
+      "activation_entropy": {
+        "mean": 4.4613728523254395,
+        "std": 0.7830966114997864,
+        "min": 3.230748176574707,
+        "max": 5.316351890563965,
+        "n": 90
+      },
+      "cross_run_similarity": {
+        "mean": 0.9999998807907104,
+        "std": 2.5147227233901503e-07,
+        "min": 0.9999992847442627,
+        "max": 1.0000001192092896,
+        "n": 30
+      },
+      "token_variance": {
+        "mean": 381.7747802734375,
+        "std": 282.4623718261719,
+        "min": 4.161643981933594,
+        "max": 837.704833984375,
+        "n": 90
+      },
+      "activation_magnitude": {
+        "mean": 214.365966796875,
+        "std": 31.129283905029297,
+        "min": 154.45175170898438,
+        "max": 282.06304931640625,
+        "n": 90
+      }
+    },
+    "paradigm": {
+      "layer_variance": {
+        "mean": 0.0017417947528883815,
+        "std": 0.0007932105218060315,
+        "min": 0.0011185050243511796,
+        "max": 0.00375210284255445,
+        "n": 30
+      },
+      "activation_entropy": {
+        "mean": 4.508139133453369,
+        "std": 0.6929745674133301,
+        "min": 3.446035861968994,
+        "max": 5.244244575500488,
+        "n": 90
+      },
+      "cross_run_similarity": {
+        "mean": 1.0,
+        "std": 2.0036382863963809e-07,
+        "min": 0.9999998211860657,
+        "max": 1.0000003576278687,
+        "n": 30
+      },
+      "token_variance": {
+        "mean": 417.5704040527344,
+        "std": 309.7685241699219,
+        "min": 3.4747276306152344,
+        "max": 934.891357421875,
+        "n": 90
+      },
+      "activation_magnitude": {
+        "mean": 214.94825744628906,
+        "std": 33.5678596496582,
+        "min": 168.12217712402344,
+        "max": 318.2897644042969,
+        "n": 90
+      }
+    }
+  },
+  "statistical_tests": {
+    "layer_variance": {
+      "Path vs Paradigm": {
+        "p_value": 6.27960078739297e-05,
+        "cohens_d": 1.1333482265472412,
+        "mean_diff": 0.0019515518797561526,
+        "t_statistic": 4.315661323256993
+      },
+      "Control vs Path": {
+        "p_value": 5.371290156085583e-10,
+        "cohens_d": 1.9534367322921753,
+        "mean_diff": 0.04780035838484764,
+        "t_statistic": 7.4384648124345984
+      },
+      "Control vs Paradigm": {
+        "p_value": 1.5641315842674525e-10,
+        "cohens_d": 2.0371673107147217,
+        "mean_diff": 0.04975191131234169,
+        "t_statistic": 7.75730197674042
+      }
+    },
+    "activation_entropy": {
+      "Path vs Paradigm": {
+        "p_value": 0.6735943442367203,
+        "cohens_d": -0.06324811279773712,
+        "mean_diff": -0.04676628112792969,
+        "t_statistic": -0.4219175280888751
+      },
+      "Control vs Path": {
+        "p_value": 0.0008719749012518493,
+        "cohens_d": -0.50761878490448,
+        "mean_diff": -0.3216738700866699,
+        "t_statistic": -3.3862398932380793
+      },
+      "Control vs Paradigm": {
+        "p_value": 3.4982602691924414e-05,
+        "cohens_d": -0.6365182399749756,
+        "mean_diff": -0.3684401512145996,
+        "t_statistic": -4.246106235762754
+      }
+    },
+    "token_variance": {
+      "Path vs Paradigm": {
+        "p_value": 0.4215822197786909,
+        "cohens_d": -0.12075573205947876,
+        "mean_diff": -35.795623779296875,
+        "t_statistic": -0.8055411941096262
+      },
+      "Control vs Path": {
+        "p_value": 1.1014243116308952e-09,
+        "cohens_d": 0.9647842049598694,
+        "mean_diff": 507.954833984375,
+        "t_statistic": 6.435913669798585
+      },
+      "Control vs Paradigm": {
+        "p_value": 1.8214381828384437e-08,
+        "cohens_d": 0.883995532989502,
+        "mean_diff": 472.1592102050781,
+        "t_statistic": 5.896985837035564
+      }
+    }
+  },
+  "key_findings": [
+    "Layer-wise variance: Control > Path > Paradigm (opposite of hypothesis)",
+    "Activation entropy: Both uncertain conditions > Control, but Path \u2248 Paradigm",
+    "No distinction found between path-level and paradigm-level uncertainty",
+    "Control questions show highest activation variability across layers"
+  ]
+}
