@@ -1,0 +1,35 @@
+idea:
+  title: 'Conceptual Crossroads: Mapping Paradigm-Level Uncertainty in Language Models'
+  domain: nlp
+  hypothesis: 'Paradigm-level uncertainty in language models will manifest as distinct
+    activation patterns compared to path-level uncertainty. Specifically, paradigm
+    conflicts will produce more persistent, globally distributed activation signatures
+    across multiple layers, while path uncertainty will be more localized and transient.
+
+    '
+  background:
+    description: 'This idea explores whether token-level uncertainty sometimes stems
+      from competing conceptual frameworks rather than just alternate reasoning paths.
+      We''ll test this by creating prompts with embedded paradigm conflicts and measuring
+      how hidden state dynamics differ between path-level and paradigm-level uncertainty.
+
+      '
+    papers:
+    - description: '"Are language models aware of the road not taken? Token-level
+        uncertainty and hidden state dynamics." A. Zur, A. Geiger, E. Lubana, E.J.
+        Bigelow (2025).'
+    - description: '"I Have Covered All the Bases Here: Interpreting Reasoning Features
+        in Large Language Models via Sparse Autoencoders." A.V. Galichin, et al. (2025).
+        arXiv.org.'
+  constraints:
+    compute: cpu_only
+    time_limit: 3600
+    budget: 100
+  metadata:
+    source: IdeaHub
+    source_url: https://hypogenic.ai/ideahub/idea/yGMzferjZM1yccMnf1s2
+    idea_id: conceptual_crossroads__mapping_20251116_221030_4b040afa
+    created_at: '2025-11-16T22:10:30.434984'
+    status: submitted
+    github_repo_name: paradigm-uncertainty-nlp-20e9
+    github_repo_url: https://github.com/ChicagoHAI/paradigm-uncertainty-nlp-20e9
